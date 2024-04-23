@@ -1,12 +1,18 @@
-import './App.css'
-import Homepage from './pages/home/HomePage';
+import { Routes, Route } from "react-router-dom";
+
+import "./App.css";
+import ArticleDetailPage from "./pages/articledetail/ArticleDetailpage";
+import HomePage from "./pages/HomePage";
 
 function App() {
-   return(
-    <div className="App-font-opensans">
-       <Homepage/>
+  return (
+    <div className="App font-opensans">
+      <Routes>
+        <Route index path="/" element={<HomePage />} />
+        <Route path="/blog/:id" element={<ArticleDetailPage />} />
+      </Routes>
     </div>
-   );
+  );
 }
 
-export default App
+export default App;

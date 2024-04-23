@@ -1,6 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
-import ArticleCard from "../../../Components/ArticleCard";
+import ArticleCard from "../../Components/ArticleCard";
 
 const Articles = () => {
   return (
